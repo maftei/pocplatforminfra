@@ -38,7 +38,8 @@
         "ecr:ListRepositories",
         "ecr:PutLifecyclePolicy",
         "ecr:GetLifecyclePolicy",
-        "ecr:ListTagsForResource"
+        "ecr:ListTagsForResource",
+        "ecr:TagResource"
       ],
       "Resource": "*"
     }
