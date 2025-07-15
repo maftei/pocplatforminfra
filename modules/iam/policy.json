@@ -15,6 +15,17 @@
       ]
     },
     {
+  "Effect": "Allow",
+  "Action": [
+    "ecr:CreateRepository",
+    "ecr:DescribeRepositories",
+    "ecr:ListRepositories",
+    "ecr:PutLifecyclePolicy",
+    "ecr:GetLifecyclePolicy"
+  ],
+  "Resource": "*"
+},
+    {
       "Effect": "Allow",
       "Action": [
         "dynamodb:GetItem",
