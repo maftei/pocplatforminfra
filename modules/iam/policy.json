@@ -24,6 +24,11 @@
         "dynamodb:UpdateItem"
       ],
       "Resource": "arn:aws:dynamodb:us-east-1:*:table/terraform-state-lock"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iam:GetUser",
+      "Resource": "*"
     }
   ]
 }
