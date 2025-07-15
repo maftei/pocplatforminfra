@@ -8,7 +8,7 @@ module "web_client_ecr" {
   source      = "./modules/ecr"
   name        = "web-client"
   environment = "dev"
-    tags = {
-        Owner = "maftei"
-    }
+  tags = {
+    Owner = "maftei"
+  }
 }
