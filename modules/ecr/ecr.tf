@@ -8,5 +8,5 @@ resource "aws_ecr_repository" "this" {
   tags = {
     Environment = var.environment
     Project     = "pocplatform"
-  }
+  } + var.tags
 }
