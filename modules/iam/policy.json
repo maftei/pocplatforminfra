@@ -15,17 +15,6 @@
       ]
     },
     {
-  "Effect": "Allow",
-  "Action": [
-    "ecr:CreateRepository",
-    "ecr:DescribeRepositories",
-    "ecr:ListRepositories",
-    "ecr:PutLifecyclePolicy",
-    "ecr:GetLifecyclePolicy"
-  ],
-  "Resource": "*"
-},
-    {
       "Effect": "Allow",
       "Action": [
         "dynamodb:GetItem",
@@ -40,6 +29,17 @@
       "Effect": "Allow",
       "Action": "iam:GetUser",
       "Resource": "arn:aws:iam::914132589502:user/tpocplatform-ci-user"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ecr:CreateRepository",
+        "ecr:DescribeRepositories",
+        "ecr:ListRepositories",
+        "ecr:PutLifecyclePolicy",
+        "ecr:GetLifecyclePolicy"
+      ],
+      "Resource": "*"
     }
   ]
 }
