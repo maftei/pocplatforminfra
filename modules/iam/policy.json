@@ -28,7 +28,7 @@
     {
       "Effect": "Allow",
       "Action": "iam:GetUser",
-      "Resource": "*"
+      "Resource": "arn:aws:iam::914132589502:user/tpocplatform-ci-user"
     }
   ]
 }
