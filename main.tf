@@ -9,6 +9,6 @@ module "web_client_ecr" {
   name        = "web-client"
   environment = "dev"
   tags = {
-    Owner = "maftei"
+    Owner = "maftei-razvan"
   }
 }
