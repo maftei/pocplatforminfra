@@ -5,8 +5,12 @@ resource "aws_ecr_repository" "this" {
     scan_on_push = true
   }
 
-  tags = {
+  tags = merge(
+  {
     Environment = var.environment
     Project     = "pocplatform"
-  } + var.tags
+  },
+  var.tags
+)
+
 }
