@@ -1,4 +1,11 @@
-# module "ci_iam_user" {
-#   source    = "./modules/iam"
-#   user_name = "tpocplatform-ci-user"
-# }
+module "orders_service_ecr" {
+  source      = "./modules/ecr"
+  name        = "orders-service"
+  environment = "dev"
+}
+
+module "web_client_ecr" {
+  source      = "./modules/ecr"
+  name        = "web-client"
+  environment = "dev"
+}
