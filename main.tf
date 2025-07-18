@@ -12,3 +12,12 @@ module "web_client_ecr" {
     Owner = "maftei-razvan"
   }
 }
+
+module "helm_charts_ecr" {
+  source      = "./modules/ecr"
+  name        = "helm_charts_ecr"
+  environment = "dev"
+  tags = {
+    Owner = "maftei-razvan"
+  }
+}
