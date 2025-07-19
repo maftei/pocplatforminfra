@@ -23,19 +23,19 @@ module "helm_charts_ecr" {
 }
 
 module "iam_ci_user" {
-  source    = "./modules/iam"
-  user_name = "tpocplatform-ci-user"
+  source      = "./modules/iam"
+  user_name   = "tpocplatform-ci-user"
   policy_file = "${path.module}/modules/iam/policy_ci_user.json"
 }
 
 module "iam_helm_user" {
-  source    = "./modules/iam"
-  user_name = "tpocplatform-helm-user"
+  source      = "./modules/iam"
+  user_name   = "tpocplatform-helm-user"
   policy_file = "${path.module}/modules/iam/policy_helm_user.json"
 }
 
 module "terraform_user" {
-  source    = "./modules/iam"
-  user_name = "tpocplatform-terraform-user"
+  source      = "./modules/iam"
+  user_name   = "tpocplatform-terraform-user"
   policy_file = "${path.module}/modules/iam/policy_terraform_user.json"
 }
