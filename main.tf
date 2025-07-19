@@ -13,14 +13,15 @@ module "web_client_ecr" {
   }
 }
 
-module "helm_charts_ecr" {
+module "base_app_ecr" {
   source      = "./modules/ecr"
-  name        = "helm_charts_ecr"
+  name        = "base-app"
   environment = "dev"
   tags = {
     Owner = "maftei-razvan"
   }
 }
+
 
 module "iam_ci_user" {
   source      = "./modules/iam"
