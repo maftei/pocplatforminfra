@@ -39,6 +39,7 @@
                 "ecr:PutLifecyclePolicy",
                 "ecr:GetLifecyclePolicy",
                 "ecr:ListTagsForResource",
+                "ecr:InitiateLayerUpload",
                 "ecr:TagResource"
             ],
             "Resource": "*"
