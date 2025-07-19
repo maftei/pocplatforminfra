@@ -58,7 +58,7 @@
                 "ecr:CompleteLayerUpload",
                 "ecr:PutImage"
             ],
-            "Resource": "arn:aws:ecr:us-east-1:914132589502:repository/base-app"
+            "Resource": "*"
         }
     ]
 }
