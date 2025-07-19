@@ -48,5 +48,6 @@
       "Action": "ecr:GetAuthorizationToken",
       "Resource": "*"
     }
+    
   ]
 }
