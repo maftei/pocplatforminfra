@@ -15,7 +15,7 @@
         "ecr:PutImageTagMutability",
         "ecr:SetRepositoryPolicy"
       ],
-      "Resource": "arn:aws:ecr:us-east-1:914132589502:repository/helm_charts_ecr"
+      "Resource": "*"
     }
   ]
 }
