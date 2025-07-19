@@ -31,3 +31,8 @@ module "iam_helm_user" {
   source    = "./modules/iam"
   user_name = "tpocplatform-helm-user"
 }
+
+module "terraform_user" {
+  source    = "./modules/iam"
+  user_name = "tpocplatform-terraform-user"
+}
