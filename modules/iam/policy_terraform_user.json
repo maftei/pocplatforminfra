@@ -15,6 +15,29 @@
                 "sts:*"
             ],
             "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateKey",
+                "kms:TagResource",
+                "kms:EnableKeyRotation",
+                "kms:DescribeKey",
+                "kms:GetKeyPolicy",
+                "kms:PutKeyPolicy",
+                "kms:ScheduleKeyDeletion"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:PutRetentionPolicy",
+                "logs:DescribeLogGroups",
+                "logs:CreateLogStream"
+            ],
+            "Resource": "*"
         }
     ]
 }
