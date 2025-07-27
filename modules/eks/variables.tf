@@ -1,14 +1,6 @@
-# Reserved for future variable declarations
-variable "tags" {
-  type        = map(string)
-  description = "Tags to apply to the ECR repository"
-  default     = {}
-}
-
 variable "cluster_name" {
   description = "Name of the EKS cluster"
   type        = string
-  default     = "eks1-dev-maftei"
 }
 
 variable "node_instance_type" {
@@ -39,4 +31,30 @@ variable "enable_irsa" {
   description = "Enable IAM Roles for Service Accounts"
   type        = bool
   default     = true
+}
+
+variable "tags" {
+  description = "Tags to apply to EKS resources"
+  type        = map(string)
+  default     = {}
+}
+variable "subnet_ids" {
+  description = "List of subnet IDs to use for the EKS cluster"
+  type        = list(string)
+}
+
+variable "vpc_id" {
+  description = "VPC ID where the EKS cluster will be created"
+  type        = string
+}
+
+variable "private_subnet_ids" {
+  description = "List of private subnet IDs for the EKS cluster"
+  type        = list(string)
+}
+
+variable "public_subnet_ids" {
+  description = "List of public subnet IDs (optional, for load balancers)"
+  type        = list(string)
+  default     = []
 }
